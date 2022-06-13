@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter', 'sans serif';
+    --botao-azul-efeito: #6571df;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container_descricao{
+    padding: 2em;
+} /*essa declaração está de forma geral para as outras partes*/
+
+.principal{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container_imagem{
+    margin: 1rem 0 2rem 0; 
+}
+
+.container_caixa{
+    margin: 0 11em;
+}
+
+.container_botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container_botao_assinar{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container_aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    font-weight: 400;
+}
+
+/*parte secundaria*/
+
+.container_secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario_imagem{
+    width: 598px;
+    left: 195px;
+    height: 560px;
+    top: 775px;
+    
+}
+
+.descricao_titulo_secundario{
+    position: absolute;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+    left: 1070px;
+    height: 58px;
+    top: 1200px;
+    line-height: 120%;
+}
+
+.descricao_texto_secundario{
+    position: absolute;
+    width: 588px;
+    left: 1064px;
+    top: 1264px;
+    color: var(--cinza-secundario);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 588px;
+}
+/*terceira parte*/
+
+.container_terceiro{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.terceira_imagem{
+    position: absolute;
+    width: 598px;
+    left: 1098px;
+}
+
+.descricao_texto_terceiro{
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--branco-principal);
+    margin-bottom: var(--cinza-secundario);   
+    margin-bottom: 0.1em;
+    height: 58px;
+    width: 588px;
+    left: 350px;
+    top: 1894px;
+}
+
+.assinar_botao_terceiro{
+    position: relative;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-bottom: 1em;
+    top: 340px;
+    left: 160px;
+}
+ /*quarta parte*/
+
+ .container_quarto{
+    align-items: center;
+    margin: 0 10em;
+ }
+
+ .quarta_imagem{
+    width: 598px;
+    position: absolute;
+    top: 2341px;
+ }
+
+ .descricao_titulo_quarto{
+    position: absolute;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+    height: 58px;
+    top: 2430px;
+    left: 1100px;
+    line-height: 120%;
+
+ }
+
+ .descricao_texto_quarto{
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: var(--cinza-secundario);   
+    margin-bottom: 0.1em;
+    height: 58px;
+    width: 588px;
+    left: 1100px;
+    top: 2504px;
+ }
+
+ /*dispositivos*/
+
+ .dispositivos_lista{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    margin: 4em 0 2em 0;
+ }
+
+ .dispositivos{
+    text-align: center;
+ }
+
+ .disponivel_titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin: 22em 0 2em 0;
+ }
+
+ .lista_itens{
+    font-size: 32px;
+    color: var(--branco-principal);
+ }
+
+ /*rodape*/
+
+.rodape{
+    margin: 11em 0 4em 0;
+    justify-content: center;
+    color: var(--cinza-secundario);
+    text-align: center;
+}
+
+.rodape_lista{
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+
+.link_lista{
+    text-align: center;
+    display: flex;
+}
+
+.link{
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--botao-azul);
+}
+
+.link_lista a:active{
+    color: purple;
+}
+
+.container_botao:hover{
+    color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+
+
+
+
+
+
+
+
+
+
+
